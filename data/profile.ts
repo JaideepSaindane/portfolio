@@ -3,7 +3,6 @@ export const profile = {
   shortName: "Jaideep",
   role: "AI / Product Manager",
   subline: "Product × AI × Growth × Strategy",
-  experienceSummary: "3+ years in product & strategy",
   currentlyBuilding: [
     "AI products",
     "Consumer experiences",
