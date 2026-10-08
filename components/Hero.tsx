@@ -1,7 +1,7 @@
 import { profile } from "@/data/profile";
 import { Reveal } from "./Reveal";
 import { CurrentlyBuilding } from "./CurrentlyBuilding";
-import { ShortVersion } from "./ShortVersion";
+import { CareerSummary } from "./CareerSummary";
 import { ProfilePhoto } from "./ProfilePhoto";
 
 export function Hero() {
@@ -29,7 +29,7 @@ export function Hero() {
         </div>
 
         <Reveal delay={0.2}>
-          <ShortVersion />
+          <CareerSummary />
         </Reveal>
 
         <Reveal delay={0.3}>
