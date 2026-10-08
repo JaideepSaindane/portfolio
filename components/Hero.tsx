@@ -1,6 +1,7 @@
 import { profile } from "@/data/profile";
 import { Reveal } from "./Reveal";
 import { CurrentlyBuilding } from "./CurrentlyBuilding";
+import { ShortVersion } from "./ShortVersion";
 
 export function Hero() {
   return (
@@ -33,37 +34,17 @@ export function Hero() {
         </Reveal>
 
         <Reveal delay={0.15}>
-          <p className="text-xs md:text-sm tracking-widest2 uppercase text-mute mb-14 md:mb-16">
+          <p className="text-xs md:text-sm tracking-widest2 uppercase text-mute mb-12 md:mb-14">
             {profile.subline}
           </p>
         </Reveal>
 
         <Reveal delay={0.2}>
-          <div className="flex flex-wrap items-center gap-x-8 gap-y-3 pb-10 mb-10 border-b border-line">
-            {profile.credibility.map((name) => (
-              <span
-                key={name}
-                className="text-xs md:text-sm tracking-widest uppercase text-mute"
-              >
-                {name}
-              </span>
-            ))}
-          </div>
+          <ShortVersion />
         </Reveal>
 
-        <Reveal delay={0.25}>
-          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
-            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-2.5">
-              {profile.facts.map((fact) => (
-                <li
-                  key={fact}
-                  className="flex items-center gap-2.5 text-sm text-mute"
-                >
-                  <span className="w-1 h-1 rounded-full bg-ink/40" />
-                  {fact}
-                </li>
-              ))}
-            </ul>
+        <Reveal delay={0.3}>
+          <div className="mt-8 md:mt-10">
             <CurrentlyBuilding items={profile.currentlyBuilding} />
           </div>
         </Reveal>

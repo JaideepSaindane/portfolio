@@ -12,7 +12,7 @@ export function Resume() {
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8 mb-16 md:mb-20">
           <Reveal>
             <h3 className="font-serif italic text-4xl md:text-6xl leading-tight">
-              The Short Version
+              The Long Version
             </h3>
           </Reveal>
           <Reveal delay={0.1}>
