@@ -12,7 +12,7 @@ export function SelectedWork() {
   return (
     <section id="work" className="px-6 md:px-10 py-28 md:py-36">
       <div className="max-w-content mx-auto">
-        <SectionHeading index="03" title="Selected Work" note="Click any project for the full case study" />
+        <SectionHeading index="04" title="Selected Work" note="Click any project for the full case study" />
 
         <div className="divide-y divide-line border-t border-line">
           {work.map((project, i) => (

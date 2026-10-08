@@ -2,15 +2,8 @@ export const profile = {
   name: "Jaideep Saindane",
   shortName: "Jaideep",
   role: "AI / Product Manager",
-  tagline: ["I build AI-powered products,", "consumer experiences & businesses."],
   subline: "Product × AI × Growth × Strategy",
-  credibility: ["Meesho", "Accenture Strategy", "IIM Calcutta", "IIT Madras"],
-  facts: [
-    "3+ years in product & strategy",
-    "AI / GenAI experience",
-    "Consumer product experience",
-    "Independent builder",
-  ],
+  experienceSummary: "3+ years in product & strategy",
   currentlyBuilding: [
     "AI products",
     "Consumer experiences",

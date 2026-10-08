@@ -7,7 +7,7 @@ export function Resume() {
   return (
     <section id="resume" className="px-6 md:px-10 py-28 md:py-36 bg-ink/[0.02]">
       <div className="max-w-content mx-auto">
-        <SectionHeading index="06" title="Resume" />
+        <SectionHeading index="07" title="Resume" />
 
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8 mb-16 md:mb-20">
           <Reveal>

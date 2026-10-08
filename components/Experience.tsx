@@ -6,7 +6,7 @@ export function Experience() {
   return (
     <section id="experience" className="px-6 md:px-10 py-28 md:py-36">
       <div className="max-w-content mx-auto">
-        <SectionHeading index="02" title="Experience" />
+        <SectionHeading index="03" title="Experience" />
 
         <div className="space-y-20 md:space-y-28">
           {experience.map((company) => (

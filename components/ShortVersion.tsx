@@ -18,7 +18,7 @@ export function ShortVersion() {
             Experience
           </h3>
           <p className="text-base md:text-lg font-medium leading-snug mb-1.5">
-            {profile.facts[0]}
+            {profile.experienceSummary}
           </p>
           <p className="text-mute text-sm">{companies}</p>
         </div>

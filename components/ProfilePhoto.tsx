@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 
-export function ContactPhoto({ src, alt }: { src: string; alt: string }) {
+export function ProfilePhoto({ src, alt }: { src: string; alt: string }) {
   const [failed, setFailed] = useState(false);
 
   if (failed) {

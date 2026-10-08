@@ -1,7 +1,7 @@
 import { profile } from "@/data/profile";
 import { links } from "@/data/links";
 import { Reveal } from "./Reveal";
-import { ContactPhoto } from "./ContactPhoto";
+import { ProfilePhoto } from "./ProfilePhoto";
 
 const contactLinks = [
   { label: "Email", href: `mailto:${links.email}` },
@@ -29,7 +29,7 @@ export function Contact() {
           <Reveal delay={0.1}>
             <div className="flex items-center gap-6">
               <div className="relative w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden shrink-0 bg-ink/[0.04]">
-                <ContactPhoto src="/images/jaideep.jpg" alt={profile.name} />
+                <ProfilePhoto src="/images/jaideep.jpg" alt={profile.name} />
               </div>
               <div>
                 <p className="text-lg md:text-xl font-medium">

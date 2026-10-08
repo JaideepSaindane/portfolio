@@ -7,7 +7,7 @@ export function BeyondWork() {
   return (
     <section id="beyond-work" className="px-6 md:px-10 py-28 md:py-36">
       <div className="max-w-content mx-auto">
-        <SectionHeading index="05" title="Beyond Work" />
+        <SectionHeading index="06" title="Beyond Work" />
 
         <div className="grid sm:grid-cols-2 gap-x-6 gap-y-16 md:gap-y-20">
           {beyondWork.map((item, i) => (

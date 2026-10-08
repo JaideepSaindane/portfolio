@@ -12,7 +12,7 @@ export function PersonalProjects() {
   return (
     <section id="personal-projects" className="px-6 md:px-10 py-28 md:py-36 bg-ink/[0.02]">
       <div className="max-w-content mx-auto">
-        <SectionHeading index="04" title="Things I Build" note="Products, not projects" />
+        <SectionHeading index="05" title="Things I Build" note="Products, not projects" />
 
         <div className="grid md:grid-cols-2 gap-6 md:gap-8">
           {personalProjects.map((p, i) => {
