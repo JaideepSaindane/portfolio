@@ -16,7 +16,7 @@ const fraunces = Fraunces({
   display: "swap",
 });
 
-const siteUrl = "https://jaideepsaindane.vercel.app";
+const siteUrl = "https://portfolio-ruby-theta-71.vercel.app";
 const title = "Jaideep Saindane — AI & Product Manager";
 const description =
   "AI & Product Manager building AI-powered products, consumer experiences and new businesses.";
