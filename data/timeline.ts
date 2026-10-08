@@ -19,14 +19,14 @@ export const timeline: TimelineItem[] = [
     type: "education",
   },
   {
-    year: "2022 — 2024",
+    year: "May 2022 — May 2024",
     title: "Management Consulting Analyst",
     place: "Accenture Strategy",
     type: "work",
   },
   {
-    year: "2025 — Present",
-    title: "Manager, Tech Strategy → Growth Product Manager",
+    year: "Jul 2024 — Present",
+    title: "Strategy & Operations → Growth Product Manager",
     place: "Meesho",
     type: "work",
   },

@@ -4,7 +4,7 @@ import { WorkExperienceTimeline } from "./WorkExperienceTimeline";
 
 export function CareerSummary() {
   return (
-    <div className="pt-8 md:pt-10">
+    <div>
       <div>
         <h3 className="text-[11px] tracking-widest2 uppercase text-mute mb-3">
           Education

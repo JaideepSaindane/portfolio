@@ -27,7 +27,7 @@ export function Hero() {
         <div className="grid md:grid-cols-[1fr_260px] lg:grid-cols-[1fr_320px] gap-10 md:gap-16 items-start">
           <div>
             <Reveal delay={0.1}>
-              <p className="text-sm md:text-lg tracking-widest2 uppercase text-mute mb-10 md:mb-14">
+              <p className="text-sm md:text-lg tracking-widest2 uppercase text-mute mb-6 md:mb-8">
                 {profile.subline}
               </p>
             </Reveal>
