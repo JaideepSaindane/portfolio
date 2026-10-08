@@ -4,7 +4,7 @@ import { WorkExperienceTimeline } from "./WorkExperienceTimeline";
 
 export function CareerSummary() {
   return (
-    <div className="border-t border-line pt-8 md:pt-10">
+    <div className="pt-8 md:pt-10">
       <div>
         <h3 className="text-[11px] tracking-widest2 uppercase text-mute mb-3">
           Education
@@ -19,7 +19,7 @@ export function CareerSummary() {
         </div>
       </div>
 
-      <div className="mt-10 pt-10 border-t border-line">
+      <div className="mt-10">
         <WorkExperienceTimeline />
 
         <a
