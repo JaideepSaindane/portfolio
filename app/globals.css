@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --accent: #ff5a1f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #fafaf8;
+  color: #0b0b0c;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: var(--accent);
+  color: #fafaf8;
+}
+
+a {
+  text-underline-offset: 3px;
+}
+
+/* subtle custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #fafaf8;
+}
+::-webkit-scrollbar-thumb {
+  background: #d8d6d0;
+  border-radius: 999px;
+  border: 2px solid #fafaf8;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* reusable editorial number label */
+.num {
+  font-variant-numeric: tabular-nums;
+}
