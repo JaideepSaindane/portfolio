@@ -2,6 +2,12 @@
 
 Next.js 14 (App Router) + TypeScript + Tailwind CSS + Framer Motion.
 
+**Live:** https://jaideepsaindane.vercel.app
+
+> 👉 **New session / coming back after a while? Read [`CONTEXT.md`](./CONTEXT.md) first.**
+> It has the full picture: deployment setup, CI/CD status, content model, verified career
+> history, design decisions, and everything still left to do. This README only covers local dev.
+
 ## Run locally
 
 ```bash
@@ -24,32 +30,14 @@ Then open http://localhost:3000
 ## Updating content
 
 Almost everything on the site is driven by the files in `/data` — you shouldn't need to touch
-component code to update copy:
+component code to update copy. See `CONTEXT.md` for the full table of which file controls what.
 
-- `data/profile.ts` — hero name, tagline, credibility strip, facts, "currently building" list
-- `data/experience.ts` — work experience (company / role / dates / highlights / tags)
-- `data/work.ts` — Selected Work case studies (the modal content for each project)
-- `data/personalProjects.ts` — AquaAI, ReelAutomator, and any future side projects
-- `data/beyondWork.ts` — the "Beyond Work" personal section
-- `data/resume.ts` — education, skills, selected achievements
-- `data/links.ts` — email, LinkedIn, GitHub, resume path
+## Deploying
 
-## Before you share this — customize
+This repo auto-deploys to Vercel on every push to `main` — already set up and confirmed working.
+Just `git push origin main`. See `CONTEXT.md` for the CI/CD details and the Vercel project name.
 
-- [ ] Replace placeholder LinkedIn/GitHub URLs in `data/links.ts`
-- [ ] Update `og:url` / `metadataBase` in `app/layout.tsx` once you have a live domain
-- [ ] Replace the Beyond Work placeholder images in `public/images/beyond/` with real photos
-       (same filenames: `build.jpg`, `aquariums.jpg`, `explore.jpg`, `life.jpg`)
-- [ ] Swap `public/resume.pdf` whenever your resume updates
-- [ ] Your photo is already at `public/images/jaideep.jpg` — replace it any time
+## Known open items
 
-## Deploy to Vercel
-
-1. Push this repo to GitHub
-2. Go to vercel.com → New Project → import the GitHub repo
-3. Framework preset: **Next.js** (auto-detected) — no config needed
-4. Deploy — every future `git push` to `main` auto-deploys
-
-## Add a custom domain later
-
-Vercel dashboard → Project → Settings → Domains → add your domain → follow the DNS instructions it gives you.
+See the "Known open items" section in `CONTEXT.md` — short version: Beyond Work section still
+has placeholder images, ReelAutomator has no live link yet, and there's no custom domain.
