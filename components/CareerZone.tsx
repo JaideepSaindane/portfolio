@@ -1,6 +1,3 @@
-import { Timeline } from "./Timeline";
-import { Experience } from "./Experience";
-import { SelectedWork } from "./SelectedWork";
 import { Resume } from "./Resume";
 import { Reveal } from "./Reveal";
 
@@ -23,9 +20,6 @@ export function CareerZone() {
         </div>
       </div>
 
-      <Timeline />
-      <Experience />
-      <SelectedWork />
       <Resume />
     </div>
   );

@@ -40,7 +40,7 @@ export function Hero() {
             <Reveal delay={0.18}>
               <div className="flex flex-wrap items-center gap-4">
                 <a
-                  href="#work"
+                  href="#builds"
                   className="inline-flex items-center gap-2 bg-accent text-paper text-sm font-medium px-6 py-3.5 rounded-full hover:opacity-90 transition-opacity duration-300"
                 >
                   View my work
