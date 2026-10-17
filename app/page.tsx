@@ -1,11 +1,8 @@
 import { Nav } from "@/components/Nav";
 import { Hero } from "@/components/Hero";
-import { Timeline } from "@/components/Timeline";
-import { Experience } from "@/components/Experience";
-import { SelectedWork } from "@/components/SelectedWork";
-import { PersonalProjects } from "@/components/PersonalProjects";
-import { BeyondWork } from "@/components/BeyondWork";
-import { Resume } from "@/components/Resume";
+import { CareerZone } from "@/components/CareerZone";
+import { BuildsZone } from "@/components/BuildsZone";
+import { PersonalZone } from "@/components/PersonalZone";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 
@@ -15,12 +12,9 @@ export default function Home() {
       <Nav />
       <main>
         <Hero />
-        <Timeline />
-        <Experience />
-        <SelectedWork />
-        <PersonalProjects />
-        <BeyondWork />
-        <Resume />
+        <CareerZone />
+        <BuildsZone />
+        <PersonalZone />
         <Contact />
       </main>
       <Footer />

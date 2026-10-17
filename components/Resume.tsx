@@ -7,7 +7,7 @@ export function Resume() {
   return (
     <section id="resume" className="px-6 md:px-10 py-28 md:py-36 bg-ink/[0.02]">
       <div className="max-w-content mx-auto">
-        <SectionHeading index="07" title="Resume" />
+        <SectionHeading title="Resume" />
 
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8 mb-16 md:mb-20">
           <Reveal>
@@ -16,15 +16,26 @@ export function Resume() {
             </h3>
           </Reveal>
           <Reveal delay={0.1}>
-            <a
-              href={links.resume}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 bg-ink text-paper text-sm tracking-widest2 uppercase px-7 py-4 rounded-full hover:bg-accent transition-colors duration-300 shrink-0"
-            >
-              Download Resume
-              <span aria-hidden>&darr;</span>
-            </a>
+            <div className="flex flex-wrap items-center gap-4 shrink-0">
+              <a
+                href={links.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 border border-line text-sm tracking-widest2 uppercase px-6 py-4 rounded-full hover:border-ink transition-colors duration-300"
+              >
+                LinkedIn
+                <span aria-hidden>↗</span>
+              </a>
+              <a
+                href={links.resume}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 bg-ink text-paper text-sm tracking-widest2 uppercase px-7 py-4 rounded-full hover:bg-accent transition-colors duration-300"
+              >
+                Download Resume
+                <span aria-hidden>&darr;</span>
+              </a>
+            </div>
           </Reveal>
         </div>
 

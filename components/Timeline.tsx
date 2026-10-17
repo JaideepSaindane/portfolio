@@ -6,7 +6,7 @@ export function Timeline() {
   return (
     <section id="journey" className="px-6 md:px-10 py-28 md:py-36 border-t border-line">
       <div className="max-w-content mx-auto">
-        <SectionHeading index="02" title="The Journey" />
+        <SectionHeading title="The Journey" />
 
         <div className="relative">
           {/* connecting line — horizontal on desktop, vertical on mobile */}

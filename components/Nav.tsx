@@ -5,10 +5,9 @@ import { AnimatePresence, motion } from "framer-motion";
 
 const navItems = [
   { label: "Home", href: "#top" },
-  { label: "Work", href: "#experience" },
-  { label: "Projects", href: "#work" },
-  { label: "About", href: "#beyond-work" },
-  { label: "Resume", href: "#resume" },
+  { label: "Career", href: "#career" },
+  { label: "Builds", href: "#builds" },
+  { label: "Personal", href: "#personal" },
 ];
 
 export function Nav() {

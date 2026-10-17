@@ -5,14 +5,16 @@ export function SectionHeading({
   title,
   note,
 }: {
-  index: string;
+  index?: string;
   title: string;
   note?: string;
 }) {
   return (
     <Reveal>
       <div className="flex items-baseline gap-4 mb-12 md:mb-16">
-        <span className="text-sm text-mute num tracking-widest2">{index}</span>
+        {index && (
+          <span className="text-sm text-mute num tracking-widest2">{index}</span>
+        )}
         <h2 className="text-sm md:text-base font-medium tracking-widest2 uppercase">
           {title}
         </h2>

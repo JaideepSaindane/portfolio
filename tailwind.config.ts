@@ -14,6 +14,8 @@ const config: Config = {
         mute: "#6b6b6b",
         line: "#e4e2dd",
         accent: "var(--accent)",
+        green: "#5f7858",
+        cream: "#f5f1e8",
       },
       fontFamily: {
         sans: ["var(--font-sans)", "ui-sans-serif", "system-ui"],
