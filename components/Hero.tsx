@@ -20,11 +20,7 @@ export function Hero() {
 
             <Reveal delay={0.06}>
               <h1 className="text-5xl sm:text-6xl lg:text-[4.2rem] leading-[1.05] font-bold tracking-tightest mb-6">
-                {profile.headline.pre}
-                <span className="font-serif italic font-medium text-accent">
-                  {profile.headline.emphasis}
-                </span>
-                {profile.headline.post}
+                {profile.headline}
               </h1>
             </Reveal>
 

@@ -3,11 +3,7 @@ export const profile = {
   shortName: "Jaideep",
   role: "AI / Product Manager",
   subline: "Product × AI × Growth × Strategy",
-  headline: {
-    pre: "Building products that create ",
-    emphasis: "real",
-    post: " impact.",
-  },
+  headline: "Jaideep Saindane",
   description: [
     { text: "I'm a " },
     { text: "Product & Growth", bold: true },
