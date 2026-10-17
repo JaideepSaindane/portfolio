@@ -28,8 +28,7 @@ export function Resume() {
               </a>
               <a
                 href={links.resume}
-                target="_blank"
-                rel="noopener noreferrer"
+                download="Jaideep-Saindane-Resume.pdf"
                 className="inline-flex items-center gap-3 bg-ink text-paper text-sm tracking-widest2 uppercase px-7 py-4 rounded-full hover:bg-accent transition-colors duration-300"
               >
                 Download Resume

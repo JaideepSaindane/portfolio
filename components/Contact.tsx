@@ -7,7 +7,11 @@ const contactLinks = [
   { label: "Email", href: `mailto:${links.email}` },
   { label: "LinkedIn", href: links.linkedin },
   { label: "GitHub", href: links.github },
-  { label: "Resume", href: links.resume },
+  {
+    label: "Resume",
+    href: links.resume,
+    download: "Jaideep-Saindane-Resume.pdf",
+  },
 ];
 
 export function Contact() {
@@ -46,8 +50,9 @@ export function Contact() {
                 <li key={l.label}>
                   <a
                     href={l.href}
-                    target={l.href.startsWith("http") ? "_blank" : undefined}
-                    rel={l.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                    download={l.download}
+                    target={!l.download && l.href.startsWith("http") ? "_blank" : undefined}
+                    rel={!l.download && l.href.startsWith("http") ? "noopener noreferrer" : undefined}
                     className="text-sm tracking-widest2 uppercase text-mute hover:text-ink transition-colors border-b border-transparent hover:border-ink pb-1"
                   >
                     {l.label}

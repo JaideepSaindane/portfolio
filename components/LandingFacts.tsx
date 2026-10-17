@@ -1,6 +1,10 @@
-import { workSummary } from "@/data/workSummary";
+import { experience } from "@/data/experience";
 import { education } from "@/data/resume";
 import { links } from "@/data/links";
+
+const roles = experience.flatMap((company) =>
+  company.roles.map((role) => ({ ...role, company: company.company }))
+);
 
 export function LandingFacts() {
   return (
@@ -10,11 +14,11 @@ export function LandingFacts() {
           Experience
         </h3>
         <div className="space-y-3.5">
-          {workSummary.map((w) => (
-            <div key={w.company}>
-              <p className="font-medium text-sm leading-snug">{w.role}</p>
+          {roles.map((r) => (
+            <div key={`${r.company}-${r.role}`}>
+              <p className="font-medium text-sm leading-snug">{r.role}</p>
               <p className="text-mute text-sm">
-                {w.company} &middot; {w.duration}
+                {r.company} &middot; {r.dates}
               </p>
             </div>
           ))}
@@ -66,8 +70,7 @@ export function LandingFacts() {
           </a>
           <a
             href={links.resume}
-            target="_blank"
-            rel="noopener noreferrer"
+            download="Jaideep-Saindane-Resume.pdf"
             className="text-sm font-medium text-accent hover:underline inline-flex items-center gap-1.5"
           >
             Download Resume <span aria-hidden>↓</span>

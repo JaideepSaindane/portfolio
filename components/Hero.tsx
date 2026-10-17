@@ -1,4 +1,5 @@
 import { profile } from "@/data/profile";
+import { links } from "@/data/links";
 import { Reveal } from "./Reveal";
 import { ProfilePhoto } from "./ProfilePhoto";
 import { LandingFacts } from "./LandingFacts";
@@ -45,6 +46,14 @@ export function Hero() {
                 >
                   View my work
                   <span aria-hidden>&rarr;</span>
+                </a>
+                <a
+                  href={links.resume}
+                  download="Jaideep-Saindane-Resume.pdf"
+                  className="inline-flex items-center gap-2 border border-line text-sm font-medium px-6 py-3.5 rounded-full hover:border-ink transition-colors duration-300"
+                >
+                  Download my resume
+                  <span aria-hidden>&darr;</span>
                 </a>
               </div>
             </Reveal>
