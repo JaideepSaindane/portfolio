@@ -8,7 +8,7 @@ export function PersonalZone() {
         <div className="max-w-content mx-auto">
           <Reveal>
             <span className="font-serif italic text-base text-green block mb-5">
-              03 — Outside Work
+              03 — Personal
             </span>
             <h2 className="text-4xl md:text-6xl font-bold tracking-tightest mb-4">
               My Little World

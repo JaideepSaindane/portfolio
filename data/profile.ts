@@ -14,12 +14,6 @@ export const profile = {
     },
   ],
   sideWords: ["Product", "AI", "Growth", "Strategy", "Impact"],
-  stats: [
-    { value: "4+", label: "Years in product & strategy" },
-    { value: "AI-First", label: "Product philosophy" },
-    { value: "0→1", label: "Products & AI initiatives" },
-    { value: "High", label: "Conviction builder" },
-  ],
   email: "jaideep.saindane@gmail.com",
   location: "India",
 };

@@ -1,7 +1,7 @@
 import { profile } from "@/data/profile";
-import { links } from "@/data/links";
 import { Reveal } from "./Reveal";
 import { ProfilePhoto } from "./ProfilePhoto";
+import { LandingFacts } from "./LandingFacts";
 
 export function Hero() {
   return (
@@ -40,20 +40,11 @@ export function Hero() {
             <Reveal delay={0.18}>
               <div className="flex flex-wrap items-center gap-4">
                 <a
-                  href="#builds"
+                  href="#projects"
                   className="inline-flex items-center gap-2 bg-accent text-paper text-sm font-medium px-6 py-3.5 rounded-full hover:opacity-90 transition-opacity duration-300"
                 >
                   View my work
                   <span aria-hidden>&rarr;</span>
-                </a>
-                <a
-                  href={links.resume}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 border border-line text-sm font-medium px-6 py-3.5 rounded-full hover:border-ink transition-colors duration-300"
-                >
-                  <span aria-hidden>&darr;</span>
-                  Download resume
                 </a>
               </div>
             </Reveal>
@@ -114,18 +105,8 @@ export function Hero() {
         </div>
 
         <Reveal delay={0.25}>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-y-8 mt-16 md:mt-20 py-10 md:py-12 border-t border-line">
-            {profile.stats.map((stat, i) => (
-              <div
-                key={stat.label}
-                className={`px-2 ${i > 0 ? "md:border-l md:border-line" : ""}`}
-              >
-                <p className="text-3xl md:text-4xl font-bold tracking-tight mb-1.5">
-                  {stat.value}
-                </p>
-                <p className="text-sm text-mute">{stat.label}</p>
-              </div>
-            ))}
+          <div className="mt-16 md:mt-20">
+            <LandingFacts />
           </div>
         </Reveal>
       </div>
